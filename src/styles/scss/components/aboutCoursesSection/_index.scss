@@ -1,0 +1,218 @@
+.aboutCoursesSection {
+  width: 100%;
+  background: linear-gradient(
+    178.32deg,
+    #0b1629 8.11%,
+    rgba(11, 22, 41, 0.53) 98.58%
+  );
+
+  border-top: 1px solid #4b61d1;
+  border-bottom: 1px solid #4b61d1;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @include respond(tab) {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    gap: 0px;
+  }
+  &_mobile {
+    @include respond(tab) {
+      padding: 20px 20px 0px 20px;
+    }
+  }
+  &_aboutText {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Inter;
+    line-height: 24px;
+    color: #e1ebee;
+    @include respond(tab) {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 17px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &_aboutTextSummary {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Inter;
+    line-height: 19px;
+    color: #e1ebee;
+    @include respond(tab) {
+      font-family: Inter;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &_aboutCoursesSectionFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+
+    &_firstContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &_verticalDivider {
+    height: 20px;
+    width: 1px;
+    background-color: #e1ebee;
+    margin-left: 10px;
+  }
+
+  &_aboutCoursesSectionFlexWithMargin {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  &_aboutRating {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Inter;
+    line-height: 20px;
+    color: #e1ebee;
+    margin-left: 3px;
+    @include respond(tab) {
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &_secondContainer {
+    width: 100%;
+    margin-top: 10px;
+    background: linear-gradient(0deg, #00356b, #00356b),
+      linear-gradient(0deg, rgba(75, 97, 209, 0.29), rgba(75, 97, 209, 0.29));
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include respond(tab) {
+      padding: 10px 10px 30px 10px;
+      height: 350px;
+    }
+
+    &_header {
+      width: 100%;
+      margin-top: 10px;
+      background: #e1ebee;
+      border-radius: 20px;
+      padding-top: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @include respond(tab) {
+        padding: 10px;
+      }
+      &_flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        @include respond(tab) {
+          align-items: flex-start;
+        }
+      }
+      &_text {
+        font-size: 16px;
+        font-weight: 600;
+        font-family: Inter;
+        line-height: 16px;
+        color: #000000;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 9px;
+          font-weight: 600;
+          line-height: 9px;
+          letter-spacing: 0.1em;
+          text-align: left;
+        }
+      }
+      &_smallText {
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Inter;
+        line-height: 16px;
+        color: #000000;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 7px;
+          font-weight: 600;
+          line-height: 7px;
+          letter-spacing: 0.1em;
+          text-align: left;
+        }
+      }
+    }
+    &_body {
+      margin-top: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+    &_bodyWithMargin {
+      margin-top: 20px;
+      padding-left: 60px;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      @include respond(tab) {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.imageWidth {
+  @include respond(tab) {
+    width: 70px;
+    height: 70px;
+  }
+}
+.imageWidthSmall {
+  @include respond(tab) {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.marginTop {
+  margin-top: 20px;
+}

@@ -1,0 +1,27 @@
+.community {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 19, 52, 0.77),
+      rgba(0, 19, 52, 0.77)
+    ),
+    linear-gradient(0deg, #0080cf, #0080cf);
+  &_colabText {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Inter;
+    line-height: 38px;
+    color: #e1ebee;
+
+    @include respond(tab) {
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+}

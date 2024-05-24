@@ -1,0 +1,138 @@
+.testimonialCard {
+  width: 31%;
+  height: auto;
+  border: 2px solid #0278ae;
+  background: linear-gradient(178.84deg, #094ba7 1.07%, #041e42 99.09%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 7%;
+  padding-bottom: 40px;
+  position: relative;
+
+  @include respond(tab) {
+    width: 80%;
+    padding-top: 17%;
+  }
+
+  &_leftCard {
+    z-index: 999;
+    width: 63%;
+    position: absolute;
+    left: -10%;
+    top: -35%;
+    transform: translateY(50%);
+    height: 96px;
+    background: linear-gradient(180deg, #004d98 0%, #0456a7 100%);
+    border-top-right-radius: 66px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: $color-white;
+    font-family: Inter;
+
+    @include respond(tab) {
+      height: 70px;
+      padding-top: 10px;
+      padding-right: 19%;
+    }
+
+    &_heading {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+
+      @include respond(tab) {
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+
+    &_ratingContainer {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+
+      @include respond(tab) {
+        margin-top: 3%;
+      }
+
+      .name {
+        font-size: 14px;
+        display: flex;
+        align-self: flex-end;
+        font-weight: 500;
+        position: relative;
+
+        @include respond(tab) {
+          font-size: 11px;
+          line-height: normal;
+        }
+      }
+
+      .rating {
+        position: absolute;
+        top: 120%;
+        left: 0%;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 35px 35px 0;
+      border-color: transparent #00386f transparent transparent;
+      left: 0;
+      bottom: -36.5%;
+      position: absolute;
+
+      @include respond(tab) {
+        border-width: 0 26px 26px 0;
+      }
+    }
+  }
+
+  &_rightCard {
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
+    top: -40%;
+    transform: translateY(50%);
+    background-color: $color-white;
+    border: 3px solid #4848481c;
+    // padding: 10px;
+    overflow: hidden;
+
+    @include respond(tab) {
+      width: 74px;
+      height: 74px;
+      padding: 5px;
+    }
+
+    &_innerCircle {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &_text {
+    text-align: left;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $color-white;
+
+    @include respond(tab) {
+      font-size: 11px;
+      line-height: normal;
+    }
+  }
+}

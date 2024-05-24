@@ -1,0 +1,100 @@
+.offeringsSection {
+  width: 100%;
+  padding: 60px;
+  height: auto;
+  background: linear-gradient(178.84deg, #094ba7 1.07%, #041e42 99.09%);
+
+  @include respond(tab) {
+    padding: 0px;
+    padding-bottom: 60px;
+  }
+
+  &_heading {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #e1ebee;
+
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include respond(tab) {
+      font-size: 13px;
+      padding: 30px;
+      line-height: normal;
+      margin-bottom: 0px;
+    }
+  }
+
+  &_container {
+    padding: 20px;
+    background: linear-gradient(
+      179.16deg,
+      rgba(34, 76, 152, 0.34) 0.78%,
+      rgba(154, 197, 244, 0) 99.34%
+    );
+    border: 1px solid #4b61d1;
+    border-radius: 22px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include respond(tab) {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column-reverse;
+      gap: 12px;
+      padding: 30px;
+      border-radius: 0px;
+    }
+
+    &_leftSection {
+      width: 30%;
+      font-family: Inter;
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+
+      @include respond(tab) {
+        width: 100%;
+      }
+
+      .heading {
+        font-size: 21px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #e1ebee;
+
+        @include respond(tab) {
+          font-size: 14px;
+          line-height: normal;
+        }
+      }
+
+      .secondaryText {
+        font-size: 16px;
+        font-weight: 300;
+        color: #b6d1ffe0;
+
+        @include respond(tab) {
+          font-size: 10px;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &_rightSection {
+      width: 70%;
+
+      @include respond(tab) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(25, 40, 65, 0.79),
+      rgba(25, 40, 65, 0.79)
+    ),
+    linear-gradient(0deg, #4b61d1, #4b61d1);
+  padding: 60px;
+  padding-bottom: 32px;
+  height: auto;
+  color: #e1ebee;
+  font-family: Inter;
+
+  @include respond(tab) {
+    padding: 30px;
+  }
+
+  .footerTopContainer {
+    display: flex;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 5px solid rgba(75, 97, 209, 0.09);
+
+    @include respond(tab) {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    &_logoContainer {
+      width: 42%;
+
+      @include respond(tab) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+
+        @include respond(tab) {
+          font-size: 20px;
+        }
+      }
+
+      h3 {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        width: 60%;
+
+        @include respond(tab) {
+          text-align: center;
+        }
+      }
+
+      .iconsParentContainer {
+        display: flex;
+        gap: 3px;
+        margin-top: 5px;
+
+        &_outline {
+          width: 24px;
+          height: 24px;
+          border: 1px solid #4b61d1;
+          padding: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &_topRightSection {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      @include respond(tab) {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+
+    &_listContainer {
+      margin-top: 10px;
+
+      h1 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 7px;
+
+        @include respond(tab) {
+          text-align: center;
+          font-size: 16px;
+        }
+      }
+
+      &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        @include respond(tab) {
+          align-items: center;
+        }
+
+        .listItem {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .footerBottomContainer {
+    text-align: center;
+
+    @include respond(tab) {
+      font-size: 11px;
+    }
+  }
+}

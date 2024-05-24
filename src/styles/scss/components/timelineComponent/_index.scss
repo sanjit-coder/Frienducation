@@ -1,0 +1,119 @@
+.alternateReverseTimeline {
+  height: 90px !important;
+  @include respond(tab) {
+    height: 30px !important;
+  }
+}
+
+.alternateReverseTimelineSecond {
+  height: 220px !important;
+  margin: -70px 0px 0px 0px !important;
+
+  @include respond(tab) {
+    height: 0 !important;
+    margin: -40px 0px 0px 0px !important;
+  }
+}
+
+.alternateReverseTimelineThird {
+  height: 220px !important;
+  margin: -70px 0px 0px 0px !important;
+
+  @include respond(tab) {
+    height: 120px !important;
+    margin: -40px 0px 0px 0px !important;
+  }
+}
+
+.alternateReverseTimelineMain {
+  width: 100% !important;
+  position: absolute;
+  top: 80px !important;
+  @include respond(tab) {
+    top: 10px !important;
+  }
+}
+.alternateReverseTimelineWrapper {
+  position: relative;
+  margin-bottom: 20px;
+  @include respond(tab) {
+    height: 400px;
+  }
+}
+.textFirst {
+  font-family: Inter;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #e1ebee;
+
+  @include respond(tab) {
+    font-family: Inter;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    line-height: 13px !important;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.textSecond {
+  font-family: Inter;
+  font-size: 24px !important;
+  font-weight: 300 !important;
+  line-height: 29px !important;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #e1ebee;
+  @include respond(tab) {
+    font-family: Inter;
+    font-size: 11px !important;
+    font-weight: 400 !important;
+    line-height: 13px !important;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.roadmapSecond {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #e1ebee;
+  @include respond(tab) {
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+.dotSize {
+  width: 30px;
+  height: 30px;
+  color: "#E1EBEE";
+  margin: -15px 0px 0px 0px;
+  @include respond(tab) {
+    width: 10px;
+    height: 10px;
+    color: "#E1EBEE";
+  }
+}
+
+.alternateReverseTimelineSub {
+  width: 100%;
+  @include respond(tab) {
+    width: 100%;
+  }
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+}

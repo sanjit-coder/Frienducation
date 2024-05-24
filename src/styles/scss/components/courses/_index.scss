@@ -1,0 +1,192 @@
+.courses {
+  background: linear-gradient(
+      0deg,
+      rgba(25, 40, 65, 0.79),
+      rgba(25, 40, 65, 0.79)
+    ),
+    linear-gradient(0deg, #4b61d1, #4b61d1);
+
+  padding: 60px;
+  padding-bottom: 80px;
+  width: 100%;
+  height: auto;
+
+  @include respond(tab) {
+    padding: 30px;
+  }
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    margin-bottom: 60px;
+
+    &_left {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 48px;
+      color: #e1ebee;
+
+      @include respond(tab) {
+        font-size: 13px;
+        line-height: normal;
+      }
+    }
+
+    &_right {
+      width: 30%;
+
+      @include respond(tab) {
+        width: 50%;
+      }
+
+      .buttonContainer {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+
+        @include respond(tab) {
+          gap: 8px;
+        }
+
+        &_button {
+          border-radius: 22px;
+          border: 1px solid #4b61d1;
+          background: #1b3f87;
+          color: #e1ebee;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-align: center;
+          padding: 17px 22px;
+
+          @include respond(tab) {
+            border-radius: 9px;
+            font-size: 8px;
+            padding: 5px 10px;
+          }
+
+          &:last-child {
+            display: flex;
+            align-self: flex-end;
+            justify-content: flex-end;
+            // margin-left: auto;
+            // transform: translateX(-15px);
+          }
+        }
+      }
+    }
+  }
+
+  &_cardsContainer {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab) {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &_card {
+      border-radius: 21px;
+      border: 1px solid #4b61d1;
+      background: linear-gradient(138deg, #192841 0%, #192841 100%);
+      padding: 30px 20px;
+      width: 31%;
+      height: auto;
+
+      @include respond(tab) {
+        width: 100%;
+        padding: 25px 15px;
+      }
+
+      &_center {
+        transform: scale(1.15);
+
+        @include respond(tab) {
+          transform: none;
+        }
+      }
+
+      .cardBadge {
+        border-radius: 22px;
+        border: 1px solid #4b61d1;
+        background: #1b3f87;
+        padding: 10px 17px;
+        display: inline-block;
+        margin-bottom: 14px;
+
+        @include respond(tab) {
+          padding: 5px 10px;
+          margin-bottom: 10px;
+        }
+
+        &_text {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          color: #e1ebee;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+
+          @include respond(tab) {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .headingContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &_text {
+          width: 90%;
+          color: #e1ebee;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+
+          @include respond(tab) {
+            font-size: 17px;
+          }
+        }
+
+        &_button {
+          width: 66px;
+          height: 66px;
+          border-radius: 50%;
+          padding: 16px;
+          color: #e1ebee;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          background: linear-gradient(0deg, #192841, #192841),
+            linear-gradient(
+              0deg,
+              rgba(75, 97, 209, 0.28),
+              rgba(75, 97, 209, 0.28)
+            );
+          border: 1px solid #4b61d147;
+
+          @include respond(tab) {
+            width: 47px;
+            height: 47px;
+            font-size: 10px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

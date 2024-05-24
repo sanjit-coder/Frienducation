@@ -1,0 +1,118 @@
+.statscontainer {
+  width: 100%;
+  height: 447px;
+  background: $bgcolor-statscontainer;
+  padding: 10px 0px;
+
+  @include respond(tab) {
+    padding: 5px 0px;
+    height: auto;
+  }
+}
+
+.stats {
+  border-radius: 11px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #094ba7 0%,
+    #041e42 100%,
+    #fff 100%,
+    #fff 100%
+  );
+  padding: 40px 60px;
+  display: flex;
+
+  @include respond(tab) {
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column-reverse;
+  }
+
+  &_leftsection {
+    width: 50%;
+
+    font-family: Inter;
+    color: $color-white;
+
+    @include respond(tab) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_image {
+      margin-left: 10%;
+      margin-bottom: 10px;
+    }
+
+    &_primary {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 58px;
+      margin-bottom: 10px;
+
+      @include respond(tab) {
+        font-size: 20px;
+        text-align: center;
+        line-height: normal;
+      }
+    }
+
+    &_secondary {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+
+      @include respond(tab) {
+        font-size: 12px;
+
+        line-height: normal;
+      }
+    }
+  }
+
+  &_rightsection {
+    width: 50%;
+    padding: 0px 60px;
+
+    @include respond(tab) {
+      width: 90%;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &_hexagonContainer {
+    display: flex;
+    gap: 50px;
+    margin-left: 60px;
+    margin-bottom: 35px;
+
+    @include respond(tab) {
+      margin-left: 0px;
+      justify-content: space-between;
+      gap: 0px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &_hexagonContainerBottom {
+    display: flex;
+    gap: 42px;
+    margin-left: 28%;
+
+    @include respond(tab) {
+      margin-left: 0%;
+      justify-content: space-between;
+      gap: 0px;
+    }
+  }
+}

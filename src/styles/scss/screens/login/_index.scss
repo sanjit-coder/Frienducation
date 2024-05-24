@@ -1,0 +1,179 @@
+.loginSectionLeft {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loginSectionLeftBox {
+    width: 80%;
+    height: auto;
+    font-family: Inter;
+    font-style: normal;
+    color: #e1ebee;
+
+    @include respond(tab) {
+      width: 90%;
+    }
+
+    &_heading {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+
+      @include respond(tab) {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+
+    &_enterOtpheading {
+      text-align: center;
+      color: #e1ebee;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+
+    &_timer {
+      margin-top: 36px;
+      text-align: center;
+      color: #fff;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @include respond(tab) {
+        font-size: 18px;
+      }
+    }
+
+    &_noOtp {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      color: #f4b719;
+
+      @include respond(tab) {
+        font-size: 11px;
+      }
+    }
+
+    &_disableResend {
+      color: #e1ebee;
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    &_enableResend {
+      color: #e1ebee;
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    &_button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background: #f41940;
+      text-align: center;
+      width: 100%;
+      color: #e1ebee;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      padding: 14px;
+      margin-bottom: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+
+      &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+
+      @include respond(tab) {
+        font-size: 14px;
+      }
+    }
+
+    &_noaccountText {
+      text-align: center;
+      color: #e1ebee;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+
+      @include respond(tab) {
+        font-size: 11px;
+      }
+
+      span {
+        color: #f4b719;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.loginSectionRight {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_image {
+    width: 85%;
+    height: 518px;
+
+    @include respond(tab) {
+      width: 150px;
+      height: 117px;
+    }
+  }
+}
+
+.otp-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include respond(tab) {
+    gap: 14px;
+  }
+}
+
+.otp-input {
+  width: 73px !important;
+  height: 58px !important;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: #e1ebee;
+  color: #212121;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @include respond(tab) {
+    width: 45.605px !important;
+    height: 33px !important;
+    font-size: 22px !important;
+  }
+}

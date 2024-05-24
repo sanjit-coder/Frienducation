@@ -1,0 +1,137 @@
+.teamMemberSection {
+  height: 617px;
+  width: 100%;
+  padding: 20px 60px;
+  background: linear-gradient(178.84deg, #094ba7 1.07%, #041e42 99.09%);
+  border: 2px solid #0278ae;
+
+  @include respond(tab) {
+    padding: 30px;
+    height: auto;
+    padding-left: 12%;
+  }
+
+  &_mainHeading {
+    display: none;
+
+    @include respond(tab) {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+      font-family: Inter;
+      margin-bottom: 50px;
+    }
+    &_primary {
+      font-size: 40px;
+      font-weight: 600;
+      color: $color-white;
+
+      @include respond(tab) {
+        font-size: 24px;
+      }
+    }
+
+    &_secondary {
+      font-size: 40px;
+      font-weight: 600;
+      color: #0085ff;
+      text-align: center;
+
+      @include respond(tab) {
+        font-size: 24px;
+      }
+
+      .borderWhite {
+        height: 11px;
+        width: 197px;
+        display: block;
+        border-radius: 11px;
+        margin-top: 5px;
+        background-color: $color-white;
+
+        @include respond(tab) {
+          width: 131px;
+          height: 4px;
+        }
+      }
+    }
+  }
+
+  &_topContainer {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 40px;
+
+    @include respond(tab) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+  }
+
+  &_middleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @include respond(tab) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+
+    &_heading {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      align-items: center;
+      font-family: Inter;
+
+      @include respond(tab) {
+        display: none;
+      }
+
+      &_primary {
+        font-size: 40px;
+        font-weight: 600;
+        color: $color-white;
+      }
+
+      &_secondary {
+        font-size: 40px;
+        font-weight: 600;
+        color: #0085ff;
+        text-align: center;
+
+        .borderWhite {
+          height: 11px;
+          width: 197px;
+          display: block;
+          border-radius: 11px;
+          margin-top: 5px;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+
+  &_bottomContainer {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      margin-bottom: 20px;
+      gap: 20px;
+    }
+  }
+}

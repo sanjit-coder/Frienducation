@@ -1,0 +1,420 @@
+.coursesparentcontainer {
+  position: relative;
+  min-height: 80vh;
+  padding: 72px 60px;
+  background-color: #0b1629;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @include respond(tab) {
+    padding: 50px 30px;
+    gap: 30px;
+    min-height: 85vh;
+  }
+
+  &_searchbox {
+    width: 65%;
+
+    @include respond(tab) {
+      width: 100%;
+    }
+  }
+
+  &_carouselsection {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    .carouselcontainer {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      &_heading {
+        color: #e1ebee;
+        font-family: Inter;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 600;
+        margin-left: 18px;
+
+        @include respond(tab) {
+          margin-left: 0px;
+          font-size: 21px;
+        }
+      }
+    }
+  }
+}
+
+.courseCard {
+  border-radius: 11px;
+  background: #e1ebee;
+  width: 236px !important;
+  min-height: 270px;
+  cursor: pointer;
+
+  @include respond(tab) {
+    width: 181.13px !important;
+    min-height: 214px;
+  }
+
+  &_imageContainer {
+    height: 119px;
+    padding: 3px 5px;
+    overflow: hidden;
+    position: relative;
+
+    @include respond(tab) {
+      height: 94.319px;
+      padding: 2px 4px;
+      border-radius: 7px 7px 0px 0px;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 14px;
+    padding-right: 8px;
+
+    @include respond(tab) {
+      gap: 4px;
+    }
+
+    .heading {
+      color: #000;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 600;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      max-width: 90%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      @include respond(tab) {
+        font-size: 13px;
+      }
+    }
+
+    .tutorname {
+      color: #000;
+      font-family: Inter;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+      overflow: hidden; /* Hide any overflowing content */
+      text-overflow: ellipsis; /* Display an ellipsis (...) for overflowed text */
+      max-width: 100%; /* Ensure the content doesn't expand the container */
+      /* Add any additional styles as needed */
+
+      @include respond(tab) {
+        font-size: 13px;
+      }
+    }
+
+    .starcontainer {
+      display: flex;
+      flex-wrap: wrap;
+      word-wrap: break-word;
+      align-items: center;
+      gap: 1px;
+
+      &_text {
+        display: flex;
+        align-self: center;
+        color: #f4b719;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+
+        @include respond(tab) {
+          font-size: 11px;
+        }
+      }
+
+      &_stars {
+        display: flex;
+        align-self: center;
+        margin-right: 4px;
+      }
+
+      .count {
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+
+        @include respond(tab) {
+          font-size: 11px;
+        }
+      }
+
+      &_enrolledCount {
+        word-wrap: break-word;
+        display: flex;
+        align-self: center;
+        color: #000;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+
+        @include respond(tab) {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .pricecontainer {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: #000;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 15px;
+
+      @include respond(tab) {
+        font-size: 11px;
+      }
+
+      &_discounted {
+      }
+
+      &_original {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.coursessearchcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @include respond(tab) {
+    gap: 48px;
+  }
+
+  &_noResultContainer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10%;
+
+    @include respond(tab) {
+      font-size: 20px;
+      position: relative;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .searchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 7px solid rgba(75, 97, 209, 0.09);
+
+    @include respond(tab) {
+      align-items: flex-start;
+      padding-bottom: 25px;
+      border-bottom: 4px solid rgba(75, 97, 209, 0.09);
+    }
+
+    .leftContainer {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      @include respond(tab) {
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      &_imageCard {
+        height: 270px;
+        width: 21%;
+        border-radius: 11px;
+        overflow: hidden;
+
+        @include respond(tab) {
+          height: 78px;
+          border-radius: 6px;
+        }
+      }
+
+      &_content {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #e1ebee;
+        font-family: Inter;
+
+        @include respond(tab) {
+          width: 85%;
+          gap: 6px;
+        }
+
+        h1 {
+          font-size: 32px;
+          font-weight: 600;
+
+          @include respond(tab) {
+            font-size: 13px;
+          }
+        }
+
+        h2 {
+          font-size: 17px;
+          font-weight: 500;
+
+          @include respond(tab) {
+            font-size: 10px;
+          }
+        }
+
+        .leftContainerrating {
+          color: #e1ebee;
+          font-family: Inter;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 600;
+          display: none;
+
+          @include respond(tab) {
+            display: inline-block;
+          }
+
+          span {
+            margin-left: 5px;
+            text-decoration: line-through;
+          }
+        }
+
+        &_rating {
+          display: flex;
+          align-items: center;
+
+          p {
+            color: #f4b719;
+            font-family: Inter;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            margin-right: 3px;
+
+            @include respond(tab) {
+              font-size: 11px;
+            }
+          }
+
+          .ratingCount {
+            display: flex;
+            align-self: center;
+            color: #e1ebee;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+
+            @include respond(tab) {
+              font-size: 10px;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 17px;
+          font-weight: 400;
+
+          @include respond(tab) {
+            font-size: 10px;
+          }
+        }
+
+        .bestSellertag {
+          border-radius: 8px;
+          background: #f4b719;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 9px 24px;
+          width: 142px;
+
+          @include respond(tab) {
+            font-size: 10px;
+            width: 78px;
+            padding: 6px 12px;
+          }
+        }
+      }
+    }
+
+    .rightContainer {
+      // width: 20%;
+      flex: 1;
+      color: #e1ebee;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      display: flex;
+
+      align-items: flex-end;
+      align-self: flex-start;
+      margin-top: 3%;
+
+      @include respond(tab) {
+        display: none;
+      }
+
+      &_original {
+        margin-top: -15%;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.slick-slide {
+  // width: unset !important;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @include respond(tab) {
+    padding: 0px !important;
+  }
+}
+
+.slick-list {
+  padding: 0px !important;
+}
+// .hello {
+//   background-color: #f4b719;
+//   width: 100% !important;
+//   padding: 0 20px;
+//   box-sizing: border-box;
+// }

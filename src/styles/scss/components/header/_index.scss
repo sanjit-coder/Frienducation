@@ -1,0 +1,195 @@
+.header {
+  background: #0b1629;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.21);
+  color: $color-white;
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px 24px 34px 60px;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+  transition: top 3s;
+
+  @include respond(tab) {
+    height: 56px;
+    padding: 22px 13px 10px 22px;
+  }
+
+  &_logo {
+    width: 38px;
+    height: 38px;
+
+    @include respond(tab) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &_logoContainer {
+    display: flex;
+    text-align: center;
+    flex-basis: 0;
+    gap: 7px;
+    align-items: center;
+    cursor: pointer;
+
+    &_text {
+      font-size: 32px;
+      font-family: MuseoModerno;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      span {
+        color: $color-white;
+      }
+
+      @include respond(tab) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &_navLinksContainer {
+    text-align: center;
+    display: flex;
+    flex-grow: 1;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
+
+  &_navLinkItem {
+    display: flex;
+    cursor: pointer;
+    align-self: center;
+    color: $color-white;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    &_active {
+      color: #0080cf;
+    }
+  }
+
+  &_loginContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 16px;
+
+    @include respond(tab) {
+      margin-top: 0px;
+    }
+  }
+
+  &_loginButton {
+    border-radius: 44px;
+    border: 2px solid #4b61d1;
+    // background: $color-darkblue;
+    background: inherit;
+    color: $color-white;
+    padding: 11px 40px;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+
+    @include respond(tab) {
+      display: none;
+    }
+  }
+
+  &_hamburgerIcon {
+    display: none;
+    cursor: pointer;
+    width: 19px;
+    height: 26px;
+    @include respond(tab) {
+      display: flex;
+    }
+  }
+}
+
+.stickyHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.headerNavDropdown {
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  background: #192841;
+  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+  display: none;
+  z-index: 999;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+
+  @include respond(tab) {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  &_active {
+    height: 330px;
+    opacity: 1;
+  }
+
+  &_listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    &_item {
+      border-radius: 7px;
+      border: 0px solid #4b61d1;
+      background: #e1ebee;
+      padding: 8px 30px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #202223;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    &_loginButton {
+      margin-top: 20px;
+      border-radius: 22px;
+      border: 1px solid #4b61d1;
+      background: #192841;
+      padding: 8px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #e1ebee;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+.herosection {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #094ba7 0%, #041e42 100%);
+  padding: 60px;
+  display: flex;
+  gap: 10px;
+
+  @include respond(tab) {
+    padding: 30px;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    gap: 20px;
+  }
+
+  &_leftContainer {
+    width: 70%;
+    margin-top: 40px;
+
+    @include respond(tab) {
+      width: 85%;
+      margin-top: 0px;
+    }
+
+    &_firstPara {
+      font-family: MuseoModerno;
+      font-size: 50px;
+      font-weight: 600;
+      color: $color-white;
+      display: inline-block;
+
+      @include respond(tab) {
+        font-size: 22px;
+      }
+
+      span {
+        display: inline-block;
+        color: #015be3;
+      }
+    }
+
+    &_secondPara {
+      font-family: MuseoModerno;
+      font-size: 50px;
+      font-weight: 600;
+      display: inline-block;
+      color: $color-white;
+      margin-bottom: 10px;
+
+      @include respond(tab) {
+        font-size: 22px;
+      }
+
+      span {
+        display: inline-block;
+        color: $color-white;
+      }
+    }
+
+    &_secondaryText {
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #cccccc;
+      width: 70%;
+
+      @include respond(tab) {
+        font-size: 10px;
+        width: 100%;
+        line-height: normal;
+      }
+    }
+
+    &_bottomContainer {
+      display: flex;
+      margin-top: 30px;
+
+      .learnsection {
+        margin-right: 10px;
+
+        &_button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 143px;
+          height: 42px;
+          border-radius: 44px;
+          border: 2px solid #4b61d1;
+          font-family: Inter;
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 18px;
+          color: $color-white;
+          text-align: center;
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
+
+        &_image {
+          width: 120px;
+          height: 33px;
+        }
+      }
+
+      .playsection {
+        margin-right: 7px;
+      }
+    }
+  }
+
+  &_rightContainer {
+    display: flex;
+    width: 30%;
+
+    @include respond(tab) {
+      width: 100%;
+      align-self: center;
+    }
+
+    &_image {
+      width: 516px;
+      height: 474px;
+
+      @include respond(tab) {
+        width: 326px;
+        height: 271px;
+      }
+    }
+  }
+}

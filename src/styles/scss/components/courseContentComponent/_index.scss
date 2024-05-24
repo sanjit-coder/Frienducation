@@ -1,0 +1,160 @@
+.courseContentComponent {
+  width: 100%;
+  padding: 40px 200px 40px 200px;
+  border-top: 1px solid #4b61d1;
+  border-bottom: 1px solid #4b61d1;
+  background: linear-gradient(
+    178.32deg,
+    #0b1629 8.11%,
+    rgba(11, 22, 41, 0.53) 98.58%
+  );
+  @include respond(tab) {
+    padding: 0px 0px 0px 0px !important;
+    border-top: none;
+    border-bottom: none;
+  }
+  &_container {
+    background: linear-gradient(0deg, #00356b, #00356b),
+      linear-gradient(0deg, rgba(75, 97, 209, 0.29), rgba(75, 97, 209, 0.29));
+    border-radius: 11px;
+    border: 1px solid #4b61d14a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include respond(tab) {
+      border-radius: 0px;
+      padding-bottom: 0px;
+      padding-top: 30px;
+    }
+  }
+}
+
+.timelineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.timeLineDotFirst {
+  width: 30px;
+  height: 30px;
+  color: "#E1EBEE";
+  @include respond(tab) {
+    width: 10px !important;
+    height: 10px !important;
+    color: "#E1EBEE" !important;
+  }
+}
+
+.timeLineConnectorHeight {
+  height: 140px;
+  margin: -20px 0 -20px 0;
+}
+
+.divWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typegraphyTextFirst {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: "#E1EBEE" !important;
+}
+
+.typegraphyTextSecond {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: "#E1EBEE";
+}
+.divSubWrapper {
+  display: flex;
+  gap: 5;
+  justify-content: center;
+  align-items: center;
+}
+
+.expandText {
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: "#E1EBEE";
+}
+.lastTimelineContent {
+  margin: -100 0 0 0;
+}
+.timelineItem {
+  width: 100%;
+  display: block;
+}
+
+.divTimelineContentFirst {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  @include respond(tab) {
+    width: 340px;
+    padding: 0px 20px;
+  }
+}
+
+.courseContentTextClass {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  @include respond(tab) {
+    font-family: Inter !important;
+    font-size: 10px !important;
+    font-weight: 700 !important;
+    line-height: 12px !important;
+    letter-spacing: 0em !important;
+    text-align: left;
+  }
+}
+
+.subCourseContentTextClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  @include respond(tab) {
+    font-family: Inter !important;
+    font-size: 9px !important;
+    font-weight: 600 !important;
+    line-height: 11px !important;
+    letter-spacing: 0em !important;
+    text-align: left !important;
+  }
+}
+
+.timelineMainWrapperClass {
+  @include respond(tab) {
+    margin-left: -20px;
+  }
+}

@@ -1,0 +1,157 @@
+.requirementCoursesSection {
+  background: linear-gradient(
+    178.32deg,
+    #0b1629 8.11%,
+    rgba(11, 22, 41, 0.53) 98.58%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  gap: 10px;
+  border-top: 1px solid #4b61d1;
+  border-bottom: 1px solid #4b61d1;
+  @include respond(tab) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+  &_leftContainer {
+    display: flex;
+    flex-direction: column;
+    // width: 60%;
+    @include respond(tab) {
+      width: 100%;
+    }
+    &_firstPara {
+      font-family: Inter;
+      font-size: 32px;
+      font-weight: 800;
+      color: #e1ebee;
+      display: inline-block;
+      line-height: 38px;
+      @include respond(tab) {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 10px;
+      }
+    }
+    &_secondPara {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      color: #e1ebee;
+      display: inline-block;
+      line-height: 21px;
+      @include respond(tab) {
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+    &_align {
+      margin-top: 5px;
+      gap: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &_rightContainer {
+    // width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include respond(tab) {
+      margin-top: 20px;
+      width: 100%;
+    }
+    &_container {
+      width: 376px;
+      border: 1px solid #005589;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 11px;
+      padding-bottom: 30px;
+      @include respond(tab) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      &_firstPara {
+        margin-top: 20px;
+        margin-left: 50px;
+        text-align: left;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 700;
+        color: #e1ebee;
+        line-height: 19px;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      &_secondPara {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        color: #e1ebee;
+        line-height: 19px;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 13px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      &_align {
+        margin-top: 5px;
+        margin-left: 50px;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+  }
+}
+.imageMobile {
+  @include respond(tab) {
+    height: 40%;
+    width: 90%;
+  }
+}
+
+.button {
+  background: #0080cf;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  width: 268px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11px;
+}

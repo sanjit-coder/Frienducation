@@ -1,0 +1,166 @@
+.courseModule {
+  margin-top: -80px;
+  &_top {
+    background-color: #e1ebee;
+    width: 1200px;
+    border-radius: 22px 22px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    align-items: center;
+    @include respond(tab) {
+      width: 340px;
+      padding: 10px 10px 10px 10px;
+    }
+    &_LeftText {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &_background {
+        height: 44px;
+        width: 54px;
+        border-radius: 9px;
+        background-color: #06031c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include respond(tab) {
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      &_firstPara {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        font-family: Inter;
+        color: #2d2828;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 11px;
+          font-weight: 500;
+          line-height: 13px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      &_secondPara {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 17px;
+        font-family: Inter;
+        color: #2d2828;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 11px;
+          font-weight: 600;
+          line-height: 13px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      &_thirdPara {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        font-family: Inter;
+        color: #2d2828;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 10px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    &_rightText {
+      text-align: center;
+      display: flex;
+      gap: 5px;
+    }
+  }
+  &_bottom {
+    background-color: #041834;
+    width: 1200px;
+    border-radius: 0px 0px 22px 22px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    align-items: center;
+    @include respond(tab) {
+      width: 340px;
+      padding: 10px 10px 10px 10px;
+    }
+    &_LeftText {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      &_background {
+        height: 31px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #f86f03;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include respond(tab) {
+          height: 20px;
+          width: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &_firstPara {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        font-family: Inter;
+        color: #e1ebee;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 8px;
+          font-weight: 500;
+          line-height: 10px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+      &_secondPara {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15px;
+        font-family: Inter;
+        color: #e1ebee;
+        @include respond(tab) {
+          font-family: Inter;
+          font-size: 7px;
+          font-weight: 600;
+          line-height: 8px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    &_rightText {
+      text-align: center;
+      display: flex;
+    }
+  }
+}
+
+.imageSizestyle {
+  @include respond(tab) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+  }
+}

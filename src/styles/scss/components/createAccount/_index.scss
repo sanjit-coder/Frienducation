@@ -1,0 +1,86 @@
+.createAccount {
+  width: 100%;
+  height: calc(100vh - 106px);
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background: #0b1629;
+
+  @include respond(tab) {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_leftContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b1629;
+
+    @include respond(tab) {
+      width: 70%;
+    }
+    &_image {
+      width: 80%;
+
+      @include respond(tab) {
+        width: 100%;
+      }
+    }
+  }
+  &_rightContainer {
+    padding: 0px 80px 0px 80px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    background: rgba(0, 19, 52, 0.77);
+
+    @include respond(tab) {
+      padding: 50px 20px;
+      width: 100%;
+      align-items: center;
+    }
+
+    &_checkBox {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    &_firstInput {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.noSignUPText {
+  text-align: center;
+  color: #e1ebee;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(tab) {
+    font-size: 11px;
+  }
+
+  span {
+    color: #f4b719;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/courses/page.jsx",
+    "src/app/courses/[id]/page.jsx",
+    "src/redux/features/signUp/signUpSlice.js",
+    "src/components/CreateAccount/index.js",
+    "src/components/CoursesHeroSection/index.js",
+    "src/components/AboutCourses/index.jsx",
+    "src/components/RequirementCourses/index.js",
+    "src/components/CoursesFreAskQuestions/index.js",
+    "src/components/basicAccordion/index.js",
+    "src/app/createAccount/page.js",
+    "src/app/courses/page.jsx",
+    "src/app/courses/[id]/page.jsx",
+    "src/redux/features/signUp/signUpSlice.js",
+    "src/components/CreateAccount/index.js",
+    "src/components/CoursesHeroSection/index.js",
+    "src/components/AboutCourses/index.jsx",
+    "src/components/RequirementCourses/index.js",
+    "src/components/CoursesFreAskQuestions/index.js",
+    "src/components/basicAccordion/index.js",
+    "src/app/createAccount/page.js"
+, "src/components/TimelineComponent"  ],
+  "exclude": ["node_modules"]
+}
